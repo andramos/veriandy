@@ -1,76 +1,49 @@
 body {
-  font-family: "Dosis", sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 /* Home Page Style */
 .ww-home-page {
-  background: url("../images/home-img.jpg") no-repeat center center;
-  background-size: cover;
-  background-position: 70%;
-  height: 100vh;
-  min-height: 480px;
-  max-height: 1080px; }
-  .ww-home-page .ww-wedding-announcement {
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    height: 100%;
-    color: #fff;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-    letter-spacing: 2px; }
-    .ww-home-page .ww-wedding-announcement .ww-announcement-container {
-      max-width: 600px;
-      text-align: center;
-      margin-left: 0;
-      z-index: 999; }
-    .ww-home-page .ww-wedding-announcement img {
-      max-height: 350px;
-      width: auto; }
-      @media (max-width: 480px) {
-        .ww-home-page .ww-wedding-announcement img {
-          max-height: 250px;
-          width: auto; } }
-    .ww-home-page .ww-wedding-announcement .ww-couple-name {
-      font-size: 70px; }
-      @media (max-width: 576px) {
-        .ww-home-page .ww-wedding-announcement .ww-couple-name {
-          font-size: 50px; } }
-
-.ww-home-page:before {
-  content: "";
-  background-color: rgba(245, 138, 119, 0.2);
-  width: 100%;
-  height: 100%;
-  height: 100vh;
+  background: url("../images/confetti-bg.png") no-repeat, url("../images/IMG_0876.JPG") no-repeat;
+  background-size: contain, cover;
+  background-position: top, 25%;
+  height: 80vh;
   min-height: 480px;
   max-height: 1080px;
-  position: absolute;
-  left: 0;
-  top: 0; }
+}
 
 /* Nav Bar Style */
-.ww-nav-bar .heart {
-  fill: #f26147;
-  position: relative;
-  top: 2px;
-  width: 40px;
-  -webkit-animation: pulse 1s ease infinite;
-          animation: pulse 1s ease infinite; }
+.ww-nav-bar {
+  /* color: #fff !important; */
+  background-color: #4a484d !important;
+}
 
-@-webkit-keyframes pulse {
-  0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(1.3); }
-  100% {
-    transform: scale(1); } }
+.ww-nav-bar .navbar-brand {
+  font-size: 24px;
+  /* font-weight: 700; */
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing  : 1px; }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(1.3); }
-  100% {
-    transform: scale(1); } }
+.ww-nav-bar .navbar-brand .ampersand {
+  color: #979797; }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #979797; }
+
+.ww-nav-bar .navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.ww-nav-bar .navbar .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: center;
+}
 
 .ww-nav-bar .nav-item {
   font-size: 18px;
@@ -180,3 +153,6 @@ body {
 
 .btn-outline-primary:hover {
   color: #fff; }
+
+.bg-dark {
+  background-color: #4a484d !important; }
