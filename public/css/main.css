@@ -50,21 +50,15 @@ body {
   padding: 5px 0 5px 16px;
   font-weight: 500; }
 
+/* Dinerito Style */
+.ww-dinerito ul {
+  list-style: none;
+}
+
 /* Wedding Event Style */
 .ww-wedding-event ul {
   list-style: none;
   padding-left: 0; }
-
-/* Couple Friends Style  */
-.ww-couple-friends .carousel {
-  padding: 40px 0; }
-
-.ww-couple-friends .carousel-indicators {
-  bottom: 0px; }
-  .ww-couple-friends .carousel-indicators li {
-    background-color: #6c757d; }
-  .ww-couple-friends .carousel-indicators .active {
-    background-color: #f58a77; }
 
 /* Photo Gallery Style */
 .ww-photo-gallery .ww-category-filter a {
@@ -155,4 +149,6 @@ body {
   color: #fff; }
 
 .bg-dark {
-  background-color: #4a484d !important; }
+  background-color: #4a484d !important;
+  color: #fff;
+}
