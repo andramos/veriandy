@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Veriandy</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <!-- <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&amp;display=swap" media="print" onload="this.media='all'"/>
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&amp;display=swap"/>
-    </noscript> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -26,6 +21,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
     <link href="css/font-awesome/css/all.min.css?ver=1.1.0" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
     <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
     <link href="css/ekko-lightbox.css?ver=1.1.0" rel="stylesheet">
     <link href="css/main.css?ver=1.1.0" rel="stylesheet">
@@ -152,36 +148,33 @@
             <div class="row">
               <div class="col md-6 pb-3">
                 <div class="form-group">
-                  <label for="name-input">Your Name*</label>
+                  <label for="name-input">¿Quién eres?</label>
                   <input class="form-control" id="name-input" type="text" name="name" required="required"/>
                 </div>
               </div>
               <div class="col-md-6 pb-3">
                 <div class="form-group">
-                  <label for="email-input">Your Email*</label>
+                  <label for="email-input">Tu Email</label>
                   <input class="form-control" id="email-input" type="email" name="_replyto" required="required"/>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col md-6 pb-3">
-                <div class="form-group">
-                  <label for="guest-input">Number of Guests</label>
-                  <select class="form-control" id="guest-input" name="guest">
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                    <option value="4">Four</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-6 pb-3">
-                <div class="form-group">
-                  <label for="events-input">I am Attending</label>
-                  <select class="form-control" id="events-input" name="events">
-                    <option value="all-event">All Events</option>
-                    <option value="wedding-ceremony">Wedding ceremony</option>
-                    <option value="reception-party">Reception Party</option>
+                <div class="form-group text-color-black">
+                  <label for="guest-input">¿Quién eres?</label>
+                  <select class="form-control selectpicker" id="guest-input" name="guest" multiple data-live-search="true">
+                    <optgroup label="Familia de Verónica">
+                      <option value="1">Yolanda</option>
+                      <option value="2">Melissa</option>
+                      <option value="3">Iván</option>
+                      <option value="4">Abraham</option>
+                    </optgroup>
+                    <optgroup label="Familia de Andrés">
+                      <option value="5">Armando</option>
+                      <option value="6">Luisa</option>
+                      <option value="7">Irene</option>
+                    </optgroup>
                   </select>
                 </div>
               </div>
@@ -189,7 +182,7 @@
             <div class="row">
               <div class="col">
                 <div class="form-group">
-                  <label for="message-input">Your Message</label>
+                  <label for="message-input">Mensaje</label>
                   <textarea class="form-control" id="message-input" name="message" rows="4"></textarea>
                 </div>
               </div>
@@ -215,6 +208,7 @@
     <footer></footer>
     <script src="scripts/jquery.min.js?ver=1.1.0"></script>
     <script src="scripts/bootstrap.bundle.min.js?ver=1.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
     <script src="scripts/aos.js?ver=1.1.0"></script>
     <script src="scripts/ekko-lightbox.min.js?ver=1.1.0"></script>
     <script src="scripts/main.js?ver=1.1.0"></script>
