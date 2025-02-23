@@ -94,3 +94,12 @@ $(document).on("click", '[data-toggle="lightbox"]', function(event) {
   event.preventDefault();
   $(this).ekkoLightbox();
 });
+
+// Form
+$("#guest-input-secondary").change(function() {
+  if ($(this).val().includes("other")) {
+    $("#name-input-group")[0].style.display = "block";
+  } else {
+    $("#name-input-group")[0].style.display = "none";
+  }
+});
