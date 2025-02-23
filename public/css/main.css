@@ -3,10 +3,10 @@ body {
 
 /* Home Page Style */
 .ww-home-page {
-  background: url("../images/confetti-bg.png") no-repeat, url("../images/IMG_0876.JPG") no-repeat;
-  background-size: contain, cover;
-  background-position: top, 25%;
-  height: 80vh;
+  background: url("../images/FotoPortada.jpg") no-repeat;
+  background-size: cover;
+  background-position: 25%;
+  height: 100vh;
   min-height: 480px;
   max-height: 1080px;
 }
