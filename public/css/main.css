@@ -13,10 +13,10 @@ body {
 
 /* Nav Bar Style */
 .ww-nav-bar {
-  background: url("../images/confetti-bg-small.png") no-repeat;
+  background: url("../images/confetti-bg-smallmodif.png") no-repeat;
   background-size: cover;
   background-position: top;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
 }
 
 .ww-nav-bar .navbar-brand {
