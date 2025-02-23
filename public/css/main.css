@@ -13,8 +13,10 @@ body {
 
 /* Nav Bar Style */
 .ww-nav-bar {
-  /* color: #fff !important; */
-  background-color: #4a484d !important;
+  background: url("../images/confetti-bg-small.png") no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-top: 1.5rem;
 }
 
 .ww-nav-bar .navbar-brand {
@@ -50,9 +52,33 @@ body {
   padding: 5px 0 5px 16px;
   font-weight: 500; }
 
+
+/* Bienvenida Style */
+.bienvenida h1 {
+  font-weight: 300;
+}
+.bienvenida p {
+  font-size: 1.2rem;
+  margin: 2rem;
+}
+
+.bienvenida img {
+  width: 20rem;
+  margin-top: 3rem;
+}
+
 /* Dinerito Style */
-.ww-dinerito ul {
-  list-style: none;
+.ww-dinerito h4.h4.text-center {
+  margin-top: -.5rem;
+}
+
+.ww-dinerito p {
+  margin-bottom: 0;
+}
+
+.ww-dinerito .iban {
+  font-size: 1.5rem;
+  margin-top: .7rem;
 }
 
 /* Wedding Event Style */
@@ -141,7 +167,7 @@ body {
 
 /* Common Style */
 .ww-title {
-  font-family: "Great Vibes", cursive; }
+  font-family: "Ms Madi", serif; }
 
 .ww-section {
   padding: 100px 0; }
