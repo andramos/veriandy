@@ -7,16 +7,20 @@ body {
   background-size: cover;
   background-position: 25%;
   height: 100vh;
-  min-height: 480px;
-  max-height: 1080px;
+}
+
+@media (max-width: 700px) {
+  .ww-home-page {
+    height: 60vh;
+  }
 }
 
 /* Nav Bar Style */
 .ww-nav-bar {
   background: url("../images/confetti-bg-smallmodif.png") no-repeat;
-  background-size: cover;
+  background-repeat: repeat-x;
+  background-size: 1200px;
   background-position: top;
-  padding-top: 1rem;
 }
 
 .ww-nav-bar .navbar-brand {
