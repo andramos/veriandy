@@ -95,6 +95,17 @@ $(document).on("click", '[data-toggle="lightbox"]', function(event) {
   $(this).ekkoLightbox();
 });
 
+// Navbar
+// Close Navbar when clicked outside
+$(window).on('click', function(event){
+  // element over which click was made
+  var clickOver = $(event.target)
+  if ($('.navbar .navbar-toggler').attr('aria-expanded') == 'true' && clickOver.closest('.navbar-toggler').length === 0) {
+      // Click on navbar toggler button
+      $('button[aria-expanded="true"]').click();
+  }
+});
+
 // Form
 $("#guest-input-secondary").change(function() {
   if ($(this).val().includes("other")) {
