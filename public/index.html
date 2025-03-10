@@ -197,7 +197,7 @@
               <div class="col md-6">
                 <div class="form-group text-color-black">
                   <label for="guest-input">¿Quién eres?</label>
-                  <select class="form-control selectpicker" id="guest-input-main" name="guest" data-live-search="true" required="required">
+                  <select class="form-control selectpicker" id="guest-input-main" name="guest" data-live-search="true" required="required" disabled>
                     <option value="other">Otro</option>
                     <optgroup label="Familia de Verónica">
                       <option value="">Yolanda</option>
@@ -321,7 +321,7 @@
               <div class="col md-6 pb-3">
                 <div class="form-group text-color-black">
                   <label for="guest-input-secondary">¿Traes acompañante? Pareja, hij@s que coman...</label>
-                  <select class="form-control selectpicker" id="guest-input-secondary" name="guest" multiple data-live-search="true">
+                  <select class="form-control selectpicker" id="guest-input-secondary" name="guest" multiple data-live-search="true" disabled>
                     <option value="other">Otro</option>
                     <optgroup label="Familia de Verónica">
                       <option value="">Yolanda</option>
@@ -447,13 +447,13 @@
               <div class="col-md-6 pb-3">
                 <div class="form-group">
                   <label for="email-input">Tu Email</label>
-                  <input class="form-control" id="email-input" type="email" name="_replyto"/>
+                  <input class="form-control" id="email-input" type="email" name="_replyto" disabled/>
                 </div>
               </div>
               <div id="name-input-group" class="col md-6 pb-3" style="display: none;">
                 <div class="form-group">
                   <label for="name-input">¿Falta alguien? ¡Añádelo!</label>
-                  <input class="form-control" id="name-input" type="text" name="name"/>
+                  <input class="form-control" id="name-input" type="text" name="name" disabled/>
                 </div>
               </div>
             </div>
@@ -461,13 +461,13 @@
               <div class="col">
                 <div class="form-group">
                   <label for="message-input">Mensaje</label>
-                  <textarea class="form-control" id="message-input" name="message" rows="4"></textarea>
+                  <textarea class="form-control" id="message-input" name="message" rows="4" disabled></textarea>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col text-center">
-                <button class="btn btn-primary btn-submit" type="submit">Send</button>
+                <button class="btn btn-primary btn-submit" type="submit" disabled>¡Me apunto!</button>
               </div>
             </div>
           </form>
