@@ -3,7 +3,7 @@ body {
 
 /* Foto de Inicio */
 .ww-home-page {
-  background: url("../images/confetti-bg.png") no-repeat, url("../images/nerja-sonrisa3.jpg") no-repeat;
+  background: url("../images/confetti-bg-modif.png") no-repeat, url("../images/nerja-sonrisa3.jpg") no-repeat;
   background-size: 1500px, cover;
   background-position: 60% top, 25% 65%;
   height: 88vh;
@@ -73,6 +73,10 @@ body {
 /* Bienvenida */
 #bienvenida {
   padding-top: 7rem;
+  background: url("../images/confetti-bg-small.png") no-repeat;
+  background-repeat: repeat-x;
+  background-size: 1200px;
+  background-position: top;
 }
 
 .bienvenida h1 {
