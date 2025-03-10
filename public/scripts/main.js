@@ -114,3 +114,31 @@ $("#guest-input-secondary").change(function() {
     $("#name-input-group")[0].style.display = "none";
   }
 });
+
+
+simplyCountdown(".my-super-countdown", {
+    year: 2025,
+    month: 9,
+    day: 6,
+
+    // Words customization
+    words: {
+      days: {
+          // Function to handle pluralization
+          lambda: (root, count) => (count > 1 ? root + "s" : root),
+          root: "día",
+      },
+      hours: {
+          lambda: (root, count) => (count > 1 ? root + "s" : root),
+          root: "hora",
+      },
+      minutes: {
+          lambda: (root, count) => (count > 1 ? root + "s" : root),
+          root: "minuto",
+      },
+      seconds: {
+          lambda: (root, count) => (count > 1 ? root + "s" : root),
+          root: "segundo",
+      },
+  },
+});
