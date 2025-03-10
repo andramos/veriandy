@@ -45,7 +45,34 @@ $("a.smooth-scroll").click(function(event) {
 });
 
 // Photo Filter
+var screenWidth = $(window).width();
 var activeFilter = "all";
+
+// se aplica filtro si la pantalla es pequeña para que no aparezcan muchas fotos
+filterItems(screenWidth < 700 ? "cuatro" : "all");
+markButton(screenWidth < 700 ? "cuatro" : "all");
+
+$(window).resize(function() {
+  screenWidth = $(window).width();
+  let newFilter = activeFilter;
+  if (activeFilter === "all" && screenWidth < 700) {
+    newFilter = "cuatro";
+    markButton(activeFilter);
+    filterItems(activeFilter);
+  }
+});
+
+function markButton(filter) {
+  $(".ww-filter-button").each(function() {
+    if ($(this).data("filter") === filter) {
+      $(this).removeClass("btn-outline-primary");
+      $(this).addClass("btn-primary");
+    } else {
+      $(this).removeClass("btn-primary");
+      $(this).addClass("btn-outline-primary");
+    }
+  });
+}
 
 $(".ww-filter-button").on("click", function(e) {
   // remove btn-primary from all buttons first
