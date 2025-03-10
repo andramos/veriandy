@@ -119,6 +119,10 @@ body {
   padding-top: 8rem;
 }
 
+#evento .gmaps-link:hover {
+  color: #f58a77;
+}
+
 .ww-wedding-event ul {
   list-style: none;
   padding-left: 0; }
