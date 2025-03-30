@@ -193,136 +193,136 @@
     <div class="row ww-rsvp-form">
       <div class="col-md-10">
         <div class="card-body">
-          <form action="https://formspree.io/example@email.com" method="POST">
+          <form id="myForm" method="POST">
             <div class="row">
               <div class="col md-6">
                 <div class="form-group text-color-black">
-                  <label for="guest-input">¿Quién eres?</label>
-                  <select class="form-control selectpicker" id="guest-input-main" name="guest" data-live-search="true" required="required" disabled>
+                  <label for="guest-input"><br>¿Quién eres? <span>*</span></label>
+                  <select class="form-control selectpicker" id="guest-input-main" name="guest1" data-live-search="true" required>
                     <option value="other">Otro</option>
                     <optgroup label="Familia de Verónica">
-                      <option value="">Yolanda</option>
-                      <option value="">Melisa</option>
-                      <option value="">Iván</option>
-                      <option value="">Abraham</option>
-                      <option value="">Javi</option>
-                      <option value="">Belén</option>
-                      <option value="">Lucía</option>
-                      <option value="">Marta</option>
-                      <option value="">Ale</option>
-                      <option value="">Feli</option>
-                      <option value="">May</option>
-                      <option value="">May 2</option>
-                      <option value="">Cristina</option>
-                      <option value="">Cristina 2</option>
-                      <option value="">Alberto</option>
-                      <option value="">Alberto 2</option>
-                      <option value="">Carlos</option>
-                      <option value="">Carlos 2</option>
-                      <option value="">Ignacio</option>
-                      <option value="">Angeles</option>
-                      <option value="">Maruja</option>
-                      <option value="">Maruja 2</option>
+                      <option value="Yolanda">Yolanda</option>
+                      <option value="Melisa">Melisa</option>
+                      <option value="Iván">Iván</option>
+                      <option value="Abraham">Abraham</option>
+                      <option value="Javi">Javi</option>
+                      <option value="Belén">Belén</option>
+                      <option value="Lucía">Lucía</option>
+                      <option value="Marta">Marta</option>
+                      <option value="Ale">Ale</option>
+                      <option value="Feli">Feli</option>
+                      <option value="May">May</option>
+                      <option value="May 2">May 2</option>
+                      <option value="Cristina">Cristina</option>
+                      <option value="Cristina 2">Cristina 2</option>
+                      <option value="Alberto">Alberto</option>
+                      <option value="Alberto 2">Alberto 2</option>
+                      <option value="Carlos">Carlos</option>
+                      <option value="Carlos 2">Carlos 2</option>
+                      <option value="Ignacio">Ignacio</option>
+                      <option value="Angeles">Angeles</option>
+                      <option value="Maruja">Maruja</option>
+                      <option value="Maruja 2">Maruja 2</option>
                     </optgroup>
                     <optgroup label="Familia de Andrés">
-                      <option value="">Armando</option>
-                      <option value="">Luisa</option>
-                      <option value="">Irene</option>
+                      <option value="Armando">Armando</option>
+                      <option value="Luisa">Luisa</option>
+                      <option value="Irene">Irene</option>
                     </optgroup>
                     <optgroup label="Familia Ramos">
-                      <option value="">Armando (Abuelo)</option>
-                      <option value="">Pepita</option>
-                      <option value="">Alvaro</option>
-                      <option value="">Paqui</option>
-                      <option value="">Beatriz</option>
-                      <option value="">Jero</option>
-                      <option value="">Elena</option>
-                      <option value="">Alejandro</option>
-                      <option value="">Tere</option>
-                      <option value="">Joaquin</option>
+                      <option value="Armando (Abuelo)">Armando (Abuelo)</option>
+                      <option value="Pepita">Pepita</option>
+                      <option value="Alvaro">Alvaro</option>
+                      <option value="Paqui">Paqui</option>
+                      <option value="Beatriz">Beatriz</option>
+                      <option value="Jero">Jero</option>
+                      <option value="Elena">Elena</option>
+                      <option value="Alejandro">Alejandro</option>
+                      <option value="Tere">Tere</option>
+                      <option value="Joaquin">Joaquin</option>
                     </optgroup>
                     <optgroup label="Familia Iáñez">
-                      <option value="">Tito Chiqui</option>
-                      <option value="">Tita Pili</option>
-                      <option value="">Primo AJ</option>
-                      <option value="">Primo Carlos</option>
-                      <option value="">Primo Javi</option>
-                      <option value="">Prima Elena</option>
-                      <option value="">Tita Mari</option>
-                      <option value="">Prima MªJesús</option>
-                      <option value="">Jose Luis</option>
-                      <option value="">Prima 2 Paula</option>
-                      <option value="">Primo 2 Jorge</option>
-                      <option value="">Primo Paco</option>
-                      <option value="">Elena</option>
-                      <option value="">Prima 2 Elena</option>
-                      <option value="">Tito Jesús</option>
-                      <option value="">Tita Elena</option>
-                      <option value="">Primo Alejandro</option>
-                      <option value="">Saray</option>
-                      <option value="">Primo Pablo</option>
-                      <option value="">Tito Migue</option>
-                      <option value="">Tita Merche</option>
-                      <option value="">Prima Yeyes</option>
-                      <option value="">Prima Queca</option>
-                      <option value="">Jesús</option>
-                      <option value="">Primo 2 Javi</option>
-                      <option value="">Primo 2 Jesús</option>
-                      <option value="">Primo Mime</option>
-                      <option value="">Ester</option>
-                      <option value="">Primo 2 Mime 2º</option>
+                      <option value="Tito Chiqui">Tito Chiqui</option>
+                      <option value="Tita Pili">Tita Pili</option>
+                      <option value="Primo AJ">Primo AJ</option>
+                      <option value="Primo Carlos">Primo Carlos</option>
+                      <option value="Primo Javi">Primo Javi</option>
+                      <option value="Prima Elena">Prima Elena</option>
+                      <option value="Tita Mari">Tita Mari</option>
+                      <option value="Prima MªJesús">Prima MªJesús</option>
+                      <option value="Jose Luis">Jose Luis</option>
+                      <option value="Prima 2 Paula">Prima 2 Paula</option>
+                      <option value="Primo 2 Jorge">Primo 2 Jorge</option>
+                      <option value="Primo Paco">Primo Paco</option>
+                      <option value="Elena">Elena</option>
+                      <option value="Prima 2 Elena">Prima 2 Elena</option>
+                      <option value="Tito Jesús">Tito Jesús</option>
+                      <option value="Tita Elena">Tita Elena</option>
+                      <option value="Primo Alejandro">Primo Alejandro</option>
+                      <option value="Saray">Saray</option>
+                      <option value="Primo Pablo">Primo Pablo</option>
+                      <option value="Tito Migue">Tito Migue</option>
+                      <option value="Tita Merche">Tita Merche</option>
+                      <option value="Prima Yeyes">Prima Yeyes</option>
+                      <option value="Prima Queca">Prima Queca</option>
+                      <option value="Jesús">Jesús</option>
+                      <option value="Primo 2 Javi">Primo 2 Javi</option>
+                      <option value="Primo 2 Jesús">Primo 2 Jesús</option>
+                      <option value="Primo Mime">Primo Mime</option>
+                      <option value="Ester">Ester</option>
+                      <option value="Primo 2 Mime 2º">Primo 2 Mime 2º</option>
                     </optgroup>
                     <optgroup label="Amigos de Vero">
-                      <option value="">Amara</option>
-                      <option value="">David</option>
-                      <option value="">Cristi</option>
-                      <option value="">Mari</option>
-                      <option value="">Jorge</option>
-                      <option value="">Laura</option>
-                      <option value="">Jony</option>
-                      <option value="">Chari</option>
-                      <option value="">Checa</option>
-                      <option value="">Cristina</option>
-                      <option value="">Carmen</option>
-                      <option value="">Pedro Chepa</option>
-                      <option value="">Ale</option>
-                      <option value="">Marina</option>
-                      <option value="">Migue</option>
-                      <option value="">Ana López</option>
-                      <option value="">Raquel</option>
-                      <option value="">Gonzalo</option>
-                      <option value="">Enjie</option>
-                      <option value="">Esther</option>
-                      <option value="">Oliver</option>
+                      <option value="Amara">Amara</option>
+                      <option value="David">David</option>
+                      <option value="Cristi">Cristi</option>
+                      <option value="Mari">Mari</option>
+                      <option value="Jorge">Jorge</option>
+                      <option value="Laura">Laura</option>
+                      <option value="Jony">Jony</option>
+                      <option value="Chari">Chari</option>
+                      <option value="Checa">Checa</option>
+                      <option value="Cristina">Cristina</option>
+                      <option value="Carmen">Carmen</option>
+                      <option value="Pedro Chepa">Pedro Chepa</option>
+                      <option value="Ale">Ale</option>
+                      <option value="Marina">Marina</option>
+                      <option value="Migue">Migue</option>
+                      <option value="Ana López">Ana López</option>
+                      <option value="Raquel">Raquel</option>
+                      <option value="Gonzalo">Gonzalo</option>
+                      <option value="Enjie">Enjie</option>
+                      <option value="Esther">Esther</option>
+                      <option value="Oliver">Oliver</option>
                     </optgroup>
                     <optgroup label="Amigos de Andrés">
-                      <option value="">Pedro</option>
-                      <option value="">Inma</option>
-                      <option value="">Nacho</option>
-                      <option value="">Cristina</option>
-                      <option value="">Clement</option>
-                      <option value="">Marina</option>
-                      <option value="">Salvi</option>
-                      <option value="">Jose</option>
-                      <option value="">Andrea</option>
-                      <option value="">Roque</option>
-                      <option value="">Martín Salvachúa</option>
-                      <option value="">Vito</option>
-                      <option value="">Fran Benítez</option>
-                      <option value="">Javi R</option>
-                      <option value="">Antonio Pérez</option>
-                      <option value="">Cintia</option>
-                      <option value="">Pedro (Padre)</option>
-                      <option value="">Reyes</option>
-                      <option value="">Nacho Romero</option>
+                      <option value="Pedro">Pedro</option>
+                      <option value="Inma">Inma</option>
+                      <option value="Nacho">Nacho</option>
+                      <option value="Cristina">Cristina</option>
+                      <option value="Clement">Clement</option>
+                      <option value="Marina">Marina</option>
+                      <option value="Salvi">Salvi</option>
+                      <option value="Jose">Jose</option>
+                      <option value="Andrea">Andrea</option>
+                      <option value="Roque">Roque</option>
+                      <option value="Martín Salvachúa">Martín Salvachúa</option>
+                      <option value="Vito">Vito</option>
+                      <option value="Fran Benítez">Fran Benítez</option>
+                      <option value="Javi R">Javi R</option>
+                      <option value="Antonio Pérez">Antonio Pérez</option>
+                      <option value="Cintia">Cintia</option>
+                      <option value="Pedro (Padre)">Pedro (Padre)</option>
+                      <option value="Reyes">Reyes</option>
+                      <option value="Nacho Romero">Nacho Romero</option>
                     </optgroup>
                   </select>
                 </div>
               </div>
               <div class="col md-6 pb-3">
                 <div class="form-group text-color-black">
-                  <label for="guest-input-secondary">¿Traes acompañante? Pareja, hij@s que coman...</label>
-                  <select class="form-control selectpicker" id="guest-input-secondary" name="guest" multiple data-live-search="true" disabled>
+                  <label for="guest-input-secondary">¿Traes acompañante? Pareja, hijos con hambre...</label>
+                  <select class="form-control selectpicker" id="guest-input-secondary" name="guest2" multiple data-live-search="true">
                     <option value="other">Otro</option>
                     <optgroup label="Familia de Verónica">
                       <option value="">Yolanda</option>
@@ -447,14 +447,22 @@
             <div class="row">
               <div class="col-md-6 pb-3">
                 <div class="form-group">
-                  <label for="email-input">Tu Email</label>
-                  <input class="form-control" id="email-input" type="email" name="_replyto" disabled/>
+                  <label for="email-input">Tu Email <span>*</span></label>
+                  <input class="form-control" id="email-input" type="email" name="email" required />
                 </div>
               </div>
               <div id="name-input-group" class="col md-6 pb-3" style="display: none;">
                 <div class="form-group">
                   <label for="name-input">¿Falta alguien? ¡Añádelo!</label>
-                  <input class="form-control" id="name-input" type="text" name="name" disabled/>
+                  <input class="form-control" id="name-input" type="text" name="name"/>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-group d-flex justify-content-between align-items-center">
+                  <label for="bus-checkbox">¿Quieres bus?</label>
+                  <input class="form-control" type="checkbox" id="bus-checkbox" name="bus-checkbox">
                 </div>
               </div>
             </div>
@@ -462,16 +470,17 @@
               <div class="col">
                 <div class="form-group">
                   <label for="message-input">Mensaje</label>
-                  <textarea class="form-control" id="message-input" name="message" rows="4" disabled></textarea>
+                  <textarea class="form-control" id="message-input" name="message" rows="4"></textarea>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col text-center">
-                <button class="btn btn-primary btn-submit" type="submit" disabled>¡Me apunto!</button>
+                <button class="btn btn-primary btn-submit" type="submit">¡Me apunto!</button>
               </div>
             </div>
           </form>
+          <div id="feedback" class="feedback"></div>
         </div>
       </div>
     </div>

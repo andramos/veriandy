@@ -211,6 +211,48 @@ body {
   color: #495057;
 }
 
+.ww-rsvp-detail .ww-rsvp-form #message-input,
+.ww-rsvp-detail .ww-rsvp-form #email-input,
+.ww-rsvp-detail .ww-rsvp-form #name-input {
+  color: #fff;
+}
+.ww-rsvp-detail .ww-rsvp-form #message-input:disabled,
+.ww-rsvp-detail .ww-rsvp-form #email-input:disabled,
+.ww-rsvp-detail .ww-rsvp-form #name-input:disabled {
+  color: #495057;
+}
+
+.ww-rsvp-detail .ww-rsvp-form label span {
+  color: #f58a77;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #f58a77;
+}
+input[type="checkbox"]:checked {
+  background-color: #f58a77;
+  border-color: #f58a77;
+}
+
+.feedback {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.feedback.success {
+  text-align: center;
+  font-family: 'Ms Madi', serif;
+  font-size: 2rem;
+  color: #fff;
+}
+.feedback.error {
+  color: #721c24;
+  background-color: #f8d7dae5;
+}
+
 /* Footer Style */
 .ww-footer a.credit {
   color: inherit;

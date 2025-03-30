@@ -169,3 +169,55 @@ simplyCountdown(".my-super-countdown", {
       },
   },
 });
+
+document.getElementById('myForm').addEventListener('submit', handleSubmit);
+
+async function handleSubmit(event) {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+  const formObject = Object.fromEntries(formData.entries());
+
+  if (!formObject.guest1 || !formObject.email) {
+    displayFeedback('Por favor, completa los campos obligatorios.', 'error');
+    return;
+  }
+
+  try {
+    const response = await fetch('https://saveformdata-4uupwi46eq-ew.a.run.app', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formObject)
+    });
+
+    await response.json();
+
+    if (response.ok) {
+      displayFeedback(`¡Gracias! Contamos contigo`, 'success');
+      disableInputs();
+    } else {
+      displayFeedback(`Ha habido un error feo, no se pudo enviar la información`, 'error');
+    }
+
+  } catch (error) {
+    console.error('Error al enviar el formulario:', error);
+    displayFeedback('¡Vaya! Un error inesperado. Por favor, inténtalo de nuevo a ver si así...', 'error');
+  }
+}
+
+function displayFeedback(message, type = 'info') {
+  const feedbackDiv = document.getElementById('feedback');
+  feedbackDiv.textContent = message;
+  feedbackDiv.className = `feedback ${type}`;
+}
+
+function disableInputs() {
+  const inputs = document.querySelectorAll(
+    '#myForm input, #myForm #guest-input-main, #myForm #guest-input-secondary, #myForm textarea, #myForm button[type="submit"]'
+  );
+  inputs.forEach(input => {
+    input.disabled = true;
+  });
+}
