@@ -100,6 +100,18 @@ body {
   margin-top: 4rem;
 }
 
+/* Pedida */
+#pedida {
+  padding-top: 9rem;
+}
+
+#video-pedida {
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
 /* Dinerito */
 #dinerito {
   padding-top: 9rem;
