@@ -133,15 +133,6 @@ $(window).on('click', function(event){
   }
 });
 
-// Form
-$("#guest-input-secondary").change(function() {
-  if ($(this).val().includes("other")) {
-    $("#name-input-group")[0].style.display = "block";
-  } else {
-    $("#name-input-group")[0].style.display = "none";
-  }
-});
-
 
 simplyCountdown(".my-super-countdown", {
     year: 2025,
