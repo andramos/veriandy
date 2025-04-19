@@ -1,0 +1,72 @@
+/* Tomado de https://freefrontend.com/css-checkboxes/ Author: Homer Gaines / September 10, 2020 (adaptado por mi) */
+.toggle__input {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.toggle__input:not([disabled]):active + .toggle-track,
+.toggle__input:not([disabled]):focus + .toggle-track {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 0px 2px #f58a77; /* Replace $focus-ring */
+}
+
+.toggle__input:disabled + .toggle-track {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.toggle-track {
+  background: #ffffff21; /* Replace $track-background */
+  border: 1px solid #ccc; /* Replace $track-border */
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  height: 30px; /* Replace $track-height */
+  margin-right: 12px;
+  position: relative;
+  width: 60px; /* Replace $track-width */
+}
+
+.toggle-indicator {
+  align-items: center;
+  background: #ffffff75; /* Replace $dark */
+  border-radius: 24px; /* Replace $toggle-indicator-size */
+  bottom: 2px;
+  display: flex;
+  height: 24px; /* Replace $toggle-indicator-size */
+  justify-content: center;
+  left: 2px;
+  outline: solid 2px transparent; /* Replace $highContrastModeSupport */
+  position: absolute;
+  transition: 0.3s; /* Replace $speed */
+  width: 24px; /* Replace $toggle-indicator-size */
+}
+
+.checkMark {
+  fill: #fff;
+  height: 20px; /* Replace $toggle-indicator-size - 4 */
+  width: 20px; /* Replace $toggle-indicator-size - 4 */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; /* Replace $speed */
+}
+
+.toggle__input:checked + .toggle-track .toggle-indicator {
+  background: #f58a77; /* Replace $dark */
+  transform: translateX(30px); /* Replace $track-width - $track-height */
+}
+
+.toggle__input:checked + .toggle-track .toggle-indicator .checkMark {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out; /* Replace $speed */
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .toggle-track {
+    border-radius: 0;
+  }
+}
