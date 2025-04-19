@@ -21,24 +21,50 @@ $("a.smooth-scroll").click(function(event) {
     if (target.length) {
       // Only prevent default if animation is actually gonna happen
       event.preventDefault();
+      console.log("Scrolling to: ", target.offset().top);
+      let scrollTo = target.offset().top;
+      let fixedValue = Infinity;
+      switch (this.hash) {
+        case "#bienvenida":
+          fixedValue = 882.1875;
+          break;
+        case "#evento":
+          fixedValue = 1500;
+          break;
+        case "#pedida":
+          fixedValue = 3376.40625;
+          break;
+        case "#gallery":
+          fixedValue = 3500;
+          break;
+        case "#dinerito":
+          fixedValue = 4655.90625;
+          break;
+        case "#rsvp":
+          fixedValue = 7862.796875;
+          break;
+      }
+      if (scrollTo > fixedValue) {
+        scrollTo = fixedValue;
+      }
       $("html, body").animate(
         {
-          scrollTop: target.offset().top
+          scrollTop: scrollTo
         },
         1000,
-        function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) {
-            // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          }
-        }
+        // function() {
+        //   // Callback after animation
+        //   // Must change focus!
+        //   var $target = $(target);
+        //   $target.focus();
+        //   if ($target.is(":focus")) {
+        //     // Checking if the target was focused
+        //     return false;
+        //   } else {
+        //     $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
+        //     $target.focus(); // Set focus again
+        //   }
+        // }
       );
     }
   }
